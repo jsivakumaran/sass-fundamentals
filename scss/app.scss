@@ -1,7 +1,10 @@
 @import "settings";
 @import "foundation";
 @import "compass/css3";
-@import "buttons"l
+/*Split up the styles file into multiple files
+by naming the file with _ an underscore i.e. _buttons.scss
+and then import it in the main file */
+@import "buttons";
 // Variables
 $primary-color: #ff00cc;
 $margin-right-left: 12px;
@@ -11,7 +14,7 @@ $margin-right-left: 12px;
 header{
   @include box-shadow(blue 4px 4px 12px);
   margin: 20px, $margin-right-left;
-
+  width: 20+20+5;
   ul{
     list-style-type: none;
     li{
