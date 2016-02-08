@@ -11,4 +11,15 @@ a{
 
 header{
   margin: 20px, $margin-right-left;
+
+  ul{
+    list-style-type: none;
+    li{
+      display: inline;
+      float: left;
+      a{
+        padding-left: 80px;
+      }
+    }
+  }
 }
