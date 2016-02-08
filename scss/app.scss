@@ -5,11 +5,15 @@
 $primary-color: #ff00cc;
 $margin-right-left: 12px;
 
-a{
-  color: $primary-color;
+@mixin box-shadow($arguments){
+  box-shadow: $arguments;
+  -webkit-box-shadow: $arguments;
+  -moz-box-shadow: $arguments;
 }
 
+
 header{
+  @include box-shadow(blue 4px 4px 12px);
   margin: 20px, $margin-right-left;
 
   ul{
@@ -19,6 +23,7 @@ header{
       float: left;
       a{
         padding-left: 80px;
+        color: primary-color;
       }
     }
   }
