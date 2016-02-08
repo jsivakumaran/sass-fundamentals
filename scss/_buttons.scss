@@ -1,0 +1,14 @@
+.buttons{
+  border:2px solid gray;
+  padding:10px;
+  margin:20px 50px;
+}
+
+.cancel-button{
+  @extend .buttons;
+  background-color: #ccc;
+}
+
+.accept-button{
+  background-color: pink;
+}
