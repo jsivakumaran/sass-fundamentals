@@ -5,6 +5,20 @@
 $primary-color: #ff00cc;
 $margin-right-left: 12px;
 
+.buttons{
+  border:2px solid gray;
+  padding:10px;
+  margin:20px 50px;
+}
+
+.cancel-button{
+  @extend .buttons;
+  background-color: #ccc;
+}
+
+.accept-button{
+  background-color: pink;
+}
 
 header{
   @include box-shadow(blue 4px 4px 12px);
